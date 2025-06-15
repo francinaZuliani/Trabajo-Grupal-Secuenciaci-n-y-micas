@@ -1,4 +1,4 @@
-# Diferenciación del Microbioma Intestinal entre Individuos Sanos y Pacientes con Sepsis mediante Secuenciación 16S rRNA
+# Diferenciación del microbioma intestinal entre individuos sanos y pacientes con sepsis mediante secuenciación 16S rRNA
 
 Este repositorio contiene el desarrollo de un proyecto de investigación clínica y bioinformática orientado a comparar la composición del microbioma intestinal entre individuos sanos y pacientes con sepsis. Utiliza técnicas de secuenciación del gen 16S rRNA y análisis computacional mediante la plataforma QIIME2.
 
@@ -11,12 +11,11 @@ Explorar cómo varía el microbioma intestinal en el contexto de la sepsis, una 
 - Identificar posibles biomarcadores microbianos asociados al estado séptico.
 - Evaluar el potencial diagnóstico del perfil microbiano intestinal.
 
-
 ## Objetivos
 
 ### Objetivo general
 
-Diseñar y ejecutar un estudio clínico-bioinformático para comparar el microbioma intestinal de pacientes sépticos y personas sanas mediante secuenciación 16S y herramientas de análisis computacional.
+Diseñar y llevar acabo un estudio clínico-bioinformático para comparar el microbioma intestinal de pacientes sépticos y personas sanas mediante secuenciación 16S y herramientas de análisis computacional.
 
 ### Objetivos específicos
 
@@ -24,7 +23,7 @@ Diseñar y ejecutar un estudio clínico-bioinformático para comparar el microbi
 - Realizar extracción de ADN y secuenciación de regiones V3-V4 del gen 16S rRNA.
 - Comparar métricas de diversidad alfa y beta entre los grupos.
 - Identificar taxones diferenciales relacionados con la sepsis.
-- Evaluar el uso del perfil bacteriano como posible biomarcador diagnóstico.
+- Evaluar el uso del perfil bacteriano como posible biomarcador diagnóstico y pronóstico. 
 
 
 ## Metodología
