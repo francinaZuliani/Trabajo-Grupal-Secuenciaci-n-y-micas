@@ -1,1 +1,45 @@
+Propuesta de investigación bioinformática
+Título:
+Diferenciación del microbioma intestinal entre individuos sanos y pacientes con sepsis mediante secuenciación 16S rRNA: diseño de base de datos y análisis bioinformático.
+Introducción
+La sepsis es una de las principales causas de muerte en unidades de cuidados intensivos (UCI), caracterizada por una respuesta desregulada del huésped ante la infección. Recientemente, se ha demostrado que la disbiosis intestinal contribuye a la fisiopatología de la sepsis, mostrando una reducción de la diversidad y proliferación de patobiontes como Enterococcus o Proteobacteria(1,2). La caracterización del microbioma mediante secuenciación del gen 16S rRNA se ha consolidado como una herramienta eficaz para evaluar la composición bacteriana en distintas condiciones clínicas (3).
+Hipótesis
+Los pacientes con sepsis presentan una composición del microbioma intestinal alterada y una menor diversidad microbiana en comparación con sujetos sanos. Estas diferencias permiten discriminar ambos grupos mediante análisis bioinformático.
+Objetivo general
+Diseñar y ejecutar un proyecto de secuenciación 16S rRNA orientado a comparar el microbioma intestinal entre pacientes sépticos y personas sanas, utilizando herramientas de análisis bioinformático para evaluar diversidad y composición microbiana.
+Objetivos específicos
+1. Recolectar y procesar muestras fecales de individuos sanos y pacientes con sepsis.
+2. Realizar la extracción de ADN y la secuenciación del gen 16S rRNA (regiones V3-V4).
+3. Comparar la diversidad alfa y beta del microbioma intestinal entre ambos grupos.
+4. Identificar taxones diferenciales asociados al estado séptico.
+5. Evaluar la posibilidad de usar el perfil microbiano como biomarcador diagnóstico.
+Metodología
+1. Población y muestras
+Se incluirán dos grupos de participantes:
+ - Grupo 1: 30 pacientes adultos con diagnóstico clínico de sepsis, ingresados en UCI. Las muestras fecales se recolectarán dentro de las primeras 24 horas del ingreso.
+ - Grupo 2: 30 voluntarios adultos sanos, sin comorbilidades ni uso reciente de antibióticos. Las muestras se obtendrán por autocolecta supervisada.
+
+	Las muestras serán almacenadas a −80°C hasta su procesamiento. La extracción de ADN se realizará mediante un protocolo mecánico-químico con kits comerciales (ej. QIAamp DNA Stool Mini Kit) (4).
+2. Secuenciación
+Se simplificará la región V3-V4 del gen 16S rRNA mediante PCR con cebadores específicos. Esta región se ha validado ampliamente por su resolución taxonómica y cobertura eficiente en plataformas de secuenciación Illumina (5). La secuenciación se llevará a cabo utilizando la plataforma Illumina MiSeq, con lecturas paired-end de 2×250 pb y barcoding individual por muestra. MiSeq ofrece alta precisión en la lectura de amplicones, con un bajo índice de error (6).
+Justificación del secuenciador
+La elección de la plataforma Illumina MiSeq se fundamenta en su rendimiento comprobado para estudios de microbioma 16S, permitiendo cubrir completamente la región V3-V4 con lecturas empalmadas de 250 pb. Es ampliamente utilizada en estudios clínicos por su bajo costo, facilidad de acceso y alta calidad de datos. Si bien tecnologías como Oxford Nanopore o PacBio permiten lecturas más largas, presentan una mayor tasa de error que compromete la resolución taxonómica en amplicones cortos (7,8). Por ello, MiSeq representa un balance óptimo entre calidad, precisión y costo para el presente estudio.
+3. Análisis bioinformático
+Los datos serán analizados mediante el software QIIME2, una plataforma reproducible y escalable ampliamente utilizada para análisis de microbioma [9]. Se empleará DADA2 para la limpieza y demultiplexado , y la asignación taxonómica se realizará usando la base SILVA 138. La diversidad alfa (Shannon, Faith's PD) y beta (Bray-Curtis, UniFrac) serán evaluadas, y las diferencias entre grupos se estimarán mediante ANCOM y PERMANOVA.
+Resultados esperados
+Se espera encontrar una reducción significativa en la diversidad alfa en pacientes con sepsis, así como una composición bacteriana alterada con incremento de Proteobacteria y Enterococcus, en línea con hallazgos previos (2). Se anticipa que estos cambios permitirán definir un perfil bacteriano distintivo que pueda actuar como biomarcador diagnóstico o pronóstico. 
+Conclusión
+Esta propuesta permite integrar conocimientos en microbiología, genómica y análisis computacional. El uso de técnicas estándar y herramientas reproducibles asegura la validez de los resultados. Los hallazgos podrían tener impacto clínico directo y sentar las bases para futuros estudios multi-ómicos.
+
+Referencias
+1. Schuijt TJ, et al. The gut microbiota plays a protective role in the host defence against pneumococcal pneumonia. Gut. 2016;65(4):575–583.
+ 2. Zaborin A, et al. Membership and behavior of ultra-low-diversity pathogen communities present in the gut of humans during prolonged critical illness. mBio. 2014;5(5):e01361–14.
+ 3. Johnson JS, et al. Evaluation of 16S rRNA gene sequencing for species and strain-level microbiome analysis. Nat Commun. 2019;10(1):5029.
+ 4. Costea PI, et al. Towards standards for human fecal sample processing in metagenomic studies. Nat Biotechnol. 2017;35(11):1069–76.
+ 5. Klindworth A, et al. Evaluation of general 16S ribosomal RNA gene PCR primers for classical and next-generation sequencing-based diversity studies. Nucleic Acids Res. 2013;41(1):e1.
+ 6. Schirmer M, et al. Illumina error profiles: resolving fine-scale variation in metagenomic sequencing data. BMC Bioinformatics. 2015;16:125.
+ 7. Santos A, et al. Evaluating the performance of Oxford Nanopore Technologies for 16S rRNA microbiome characterization. bioRxiv. 2020. doi:10.1101/2020.07.10.198093.
+ 8. Tyler AD, et al. Evaluation of Oxford Nanopore’s MinION Sequencing Device for Microbial Whole Genome Sequencing Applications. Sci Rep. 2018;8(1):10931.
+ 9. Bolyen E, et al. Reproducible, interactive, scalable and extensible microbiome data science using QIIME 2. Nat Biotechnol. 2019;37(8):852–857.
+
 
