@@ -53,6 +53,6 @@ El procesamiento de datos se realizará con QIIME2. Las etapas incluyen:
 ## Estructura del repositorio
 
 Database: datos.
-scripts: código en R y comandos QIIME2.
+Scripts: código en R y comandos QIIME2.
 Resultados: visualizaciones, estadísticas.
 Docs: informe.
